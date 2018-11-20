@@ -40,12 +40,11 @@
 	"background" : {
 		"Calvin & Hobbes": "back001.jpg",
 		"Destiny": "back002.jpg",
-		"Stormtrooper": "back003.jpg",
-		"Espace": "back004.jpg"
+		"Stormtrooper": "back003.jpg"
 	},
 	"background_default": {
-		"label": "Espace",
-		"value": "back004.jpg"
+		"label": "Stormtrooper",
+		"value": "back003.jpg"
 	},
 
 
