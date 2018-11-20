@@ -83,6 +83,22 @@
 					"eventName": "esx_addons_gcphone:call",
 					"type": {
 						"number": "realestateagent"
+					},
+				},
+				{
+					"title": "Rendez-vous location",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent",
+						"message": "Bonjour, serait-il possible de prendre rendez-vous avec vous pour la location d'un bien immobilier ?"
+					}
+				},
+				{
+					"title": "Rendez-vous achat",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent",
+						"message": "Bonjour, serait-il possible de prendre rendez-vous avec vous pour l'achat d'un bien immobilier ?"
 					}
 				}
 			]
@@ -97,6 +113,14 @@
 					"type": {
 						"number": "cardealer"
 					}
+				},
+				{
+					"title": "Rendez-vous vente véhicule",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "cardealer",
+						"message": "Bonjour, serait-il possible de prendre rendez-vous avec vous pour l'achat d'un véhicule ?"
+					}
 				}
 			]
 		},
@@ -109,6 +133,38 @@
 					"eventName": "esx_addons_gcphone:call",
 					"type": {
 						"number": "mecano"
+					}
+				},
+				{
+					"title": "Camion en panne",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Bonjour, mon camion est en panne. Pouvez-vois intervenir ?"
+					}
+				},
+				{
+					"title": "Voiture en panne",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Bonjour, ma voiture est en panne. Pouvez-vois intervenir ?"
+					}
+				},
+				{
+					"title": "Moto en panne",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Bonjour, ma moto est en panne. Pouvez-vois intervenir ?"
+					}
+				},
+				{
+					"title": "Accident",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Bonjour, un accident a eu lieu. Pouvez-vois intervenir ?"
 					}
 				}
 			]
@@ -129,6 +185,22 @@
 					"eventName": "gcphone:autoCallNumber",
 					"type": {
 						"number": "911"
+					}
+				},
+				{
+					"title": "Signaler un vol",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "police",
+						"message": "Vol en cours, merci de venir au plus vite !"
+					}
+				},
+				{
+					"title": "Signaler une agression",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "police",
+						"message": "Victime d'agression"
 					}
 				}
 			]
