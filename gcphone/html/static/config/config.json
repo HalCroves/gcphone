@@ -140,7 +140,7 @@
 					"eventName": "esx_addons_gcphone:call",
 					"type": {
 						"number": "mecano",
-						"message": "Bonjour, mon camion est en panne. Pouvez-vois intervenir ?"
+						"message": "Bonjour, mon camion est en panne. Pouvez-vous intervenir ?"
 					}
 				},
 				{
@@ -148,7 +148,7 @@
 					"eventName": "esx_addons_gcphone:call",
 					"type": {
 						"number": "mecano",
-						"message": "Bonjour, ma voiture est en panne. Pouvez-vois intervenir ?"
+						"message": "Bonjour, ma voiture est en panne. Pouvez-vous intervenir ?"
 					}
 				},
 				{
@@ -156,7 +156,7 @@
 					"eventName": "esx_addons_gcphone:call",
 					"type": {
 						"number": "mecano",
-						"message": "Bonjour, ma moto est en panne. Pouvez-vois intervenir ?"
+						"message": "Bonjour, ma moto est en panne. Pouvez-vous intervenir ?"
 					}
 				},
 				{
@@ -164,7 +164,7 @@
 					"eventName": "esx_addons_gcphone:call",
 					"type": {
 						"number": "mecano",
-						"message": "Bonjour, un accident a eu lieu. Pouvez-vois intervenir ?"
+						"message": "Bonjour, un accident a eu lieu. Pouvez-vous intervenir ?"
 					}
 				}
 			]
