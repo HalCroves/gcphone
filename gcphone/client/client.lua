@@ -88,7 +88,7 @@ end
 
 Citizen.CreateThread(function ()
     while true do
-        local playerPed   = GetPlayerPed(-1)
+        local playerPed   = PlayerPedId()
         local coords      = GetEntityCoords(playerPed)
         local inRangeToActivePhone = false
         for i, _ in pairs(PhoneInCall) do
@@ -435,7 +435,7 @@ RegisterNUICallback('getMessages', function(data, cb)
 end)
 RegisterNUICallback('sendMessage', function(data, cb)
     if data.message == '%pos%' then
-        local myPos = GetEntityCoords(GetPlayerPed(-1))
+        local myPos = GetEntityCoords(PlayerPedId())
         data.message = 'GPS: ' .. myPos.x .. ', ' .. myPos.y
     end
     TriggerServerEvent('gcPhone:sendMessage', data.phoneNumber, data.message)
