@@ -62,6 +62,33 @@
 
 	"serviceCall": [
 		{
+			"display": "Agent immobilier",
+			"backgroundColor": "pink",
+			"subMenu": [
+				{
+					"title": "Envoyer un message",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent"
+					}
+				},
+				{
+					"title": "Rendez-vous location",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent"
+					}
+				},
+				{
+					"title": "Rendez-vous achat",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent"
+					}
+				}
+			]
+		},
+		{
 			"display": "Ambulance",
 			"backgroundColor": "red",
 			"subMenu": [
@@ -73,35 +100,6 @@
 					}
 				}
 			]		
-		},
-		{
-			"display": "Agent immobilier",
-			"backgroundColor": "pink",
-			"subMenu": [
-				{
-					"title": "Envoyer un message",
-					"eventName": "esx_addons_gcphone:call",
-					"type": {
-						"number": "realestateagent"
-					},
-				},
-				{
-					"title": "Rendez-vous location",
-					"eventName": "esx_addons_gcphone:call",
-					"type": {
-						"number": "realestateagent",
-						"message": "Bonjour, serait-il possible de prendre rendez-vous avec vous pour la location d'un bien immobilier ?"
-					}
-				},
-				{
-					"title": "Rendez-vous achat",
-					"eventName": "esx_addons_gcphone:call",
-					"type": {
-						"number": "realestateagent",
-						"message": "Bonjour, serait-il possible de prendre rendez-vous avec vous pour l'achat d'un bien immobilier ?"
-					}
-				}
-			]
 		},
 		{
 			"display": "Concessionnaire",
@@ -204,7 +202,7 @@
 					}
 				}
 			]
-		},
+		}
 	],
 
 	"apps": [
