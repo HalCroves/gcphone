@@ -72,7 +72,7 @@ function PhonePlayAnim (status, freeze)
     if currentStatus == status then
         return
     end
-    myPedId = GetPlayerPed(-1)
+    myPedId = PlayerPedId()
     local freeze = freeze or false
 
     local dict = "cellphone@"
