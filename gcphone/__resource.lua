@@ -20,7 +20,6 @@ files {
 	'html/static/img/background/back001.jpg',
 	'html/static/img/background/back002.jpg',
 	'html/static/img/background/back003.jpg',
-	'html/static/img/background/back004.jpg',
 	
 	'html/static/img/icons_app/call.png',
 	'html/static/img/icons_app/contacts.png',
