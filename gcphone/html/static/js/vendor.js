@@ -5712,7 +5712,7 @@ webpackJsonp([1], [function(t, e) {
                         T ? C.emit("unhandledRejection", o, t) : (n = c.onunhandledrejection) ? n({
                             promise: t,
                             reason: o
-                        }) //: (r = c.console) && r.error && r.error("Unhandled promise rejection", o)
+                        }) : (r = c.console) && r.error && r.error("Unhandled promise rejection", o)
                     }), t._h = T || R(t) ? 2 : 1), t._a = void 0, i && e.e) throw e.v
             })
         },
