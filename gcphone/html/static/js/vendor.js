@@ -5704,18 +5704,18 @@ webpackJsonp([1], [function(t, e) {
                 })
             }
         },
-        P = function(t) {
-            y.call(c, function() {
-                var e, n, r, o = t._v,
-                    i = R(t);
-                if (i && (e = b(function() {
-                        T ? C.emit("unhandledRejection", o, t) : (n = c.onunhandledrejection) ? n({
-                            promise: t,
-                            reason: o
-                        }) //: (r = c.console) && r.error && r.error("Unhandled promise rejection", o)
-                    }), t._h = T || R(t) ? 2 : 1), t._a = void 0, i && e.e) throw e.v
-            })
-        },
+        // P = function(t) {
+            // y.call(c, function() {
+                // var e, n, r, o = t._v,
+                    // i = R(t);
+                // if (i && (e = b(function() {
+                        // T ? C.emit("unhandledRejection", o, t) : (n = c.onunhandledrejection) ? n({
+                            // promise: t,
+                            // reason: o
+                        // })
+                    // }), t._h = T || R(t) ? 2 : 1), t._a = void 0, i && e.e) throw e.v
+            // })
+        // },
         R = function(t) {
             return 1 !== t._h && 0 === (t._a || t._c).length
         },
@@ -7417,7 +7417,7 @@ webpackJsonp([1], [function(t, e) {
             s = function(t) {
                 o(t) && (i.errorCbs.length ? i.errorCbs.forEach(function(e) {
                     e(t)
-                }) //: (r(!1, "uncaught error during route navigation:"), console.error(t))), n && n(t)
+                }) : (r(!1, "uncaught error during route navigation:"), console.error(t))), n && n(t)
             };
         if (h(t, a) && t.matched.length === a.matched.length) return this.ensureURL(), s();
         var c = mt(this.current.matched, t.matched),
