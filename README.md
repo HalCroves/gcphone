@@ -1,7 +1,7 @@
 ## gcphone par Jonathan (Gannon) D => https://github.com/N3MTV/gcphone
 
 Update :
- * Réindetation => http://blackmiaool.com/lua-beautify/
+ * Réindetation du code pour une meilleur lisibilité 
  * Modification du commentaire pour l'ouverture du téléphone
  * Ajout d'auto messages
  * Modification des GetPlayerPed(-1) par PlayerPedId() dans 
