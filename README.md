@@ -2,8 +2,14 @@
 
 Update :
  * Réindetation => http://blackmiaool.com/lua-beautify/
+ * Modification du commentaire pour l'ouverture du téléphone
  * Ajout d'auto messages
  * Modification des GetPlayerPed(-1) par PlayerPedId() dans 
     * client.lua
     * animation.lua
  * Dans photo.lua, modifications des touches pour utiliser la fonction ```local Keys = {```
+ 
+ ---
+ 
+### Reste à faire :
+ * Le problème des selfies
