@@ -24,20 +24,19 @@ local PhoneInCall = {}
 local currentPlaySound = false
 local soundId = 1485
 
-
-
 --====================================================================================
 --  Active ou Deactive une application (appName => config.json)
 --====================================================================================
+
 RegisterNetEvent('gcPhone:setEnableApp')
 AddEventHandler('gcPhone:setEnableApp', function(appName, enable)
     SendNUIMessage({event = 'setEnableApp', appName = appName, enable = enable })
 end)
 
-
 --====================================================================================
 --  Gestion des appels fixe
 --====================================================================================
+
 function startFixeCall (fixeNumber)
     local number = ''
     DisplayOnscreenKeyboard(1, "FMMC_MPM_NA", "", "", "", "", "", 10)
@@ -116,11 +115,11 @@ Citizen.CreateThread(function ()
         if inRangeToActivePhone == false then
             showFixePhoneHelper(coords)
         end
-        if inRangeToActivePhone == true and currentPlaySound == true then
+        if inRangeToActivePhone == true and currentPlaySound == false then
             PlaySound(soundId, "Remote_Ring", "Phone_SoundSet_Michael", 0, 0, 1)
-            currentPlaySound = false
-        elseif inRangeToActivePhone == false and currentPlaySound == true then
             currentPlaySound = true
+        elseif inRangeToActivePhone == false and currentPlaySound == true then
+            currentPlaySound = false
             StopSound(soundId)
         end
         Citizen.Wait(0)
@@ -209,6 +208,7 @@ end)
 --====================================================================================
 --  Function client | Contacts
 --====================================================================================
+
 function addContact(display, num)
     TriggerServerEvent('gcPhone:addContact', display, num)
 end
@@ -216,6 +216,7 @@ end
 function deleteContact(num)
     TriggerServerEvent('gcPhone:deleteContact', num)
 end
+
 --====================================================================================
 --  Function client | Messages
 --====================================================================================
@@ -259,11 +260,10 @@ function requestAllContact()
     TriggerServerEvent('gcPhone:requestAllContact')
 end
 
-
-
 --====================================================================================
 --  Function client | Appels
 --====================================================================================
+
 local inCall = false
 local aminCall = false
 
@@ -304,12 +304,10 @@ AddEventHandler("gcPhone:rejectCall", function(infoCall)
     SendNUIMessage({event = 'rejectCall', infoCall = infoCall})
 end)
 
-
 RegisterNetEvent("gcPhone:historiqueCall")
 AddEventHandler("gcPhone:historiqueCall", function(historique)
     SendNUIMessage({event = 'historiqueCall', historique = historique})
 end)
-
 
 function rejectCall(infoCall)
     TriggerServerEvent('gcPhone:rejectCall', infoCall)
@@ -427,6 +425,7 @@ RegisterNUICallback('reponseText', function(data, cb)
     end
     cb(json.encode({text = text}))
 end)
+
 --====================================================================================
 --  Event - Messages
 --====================================================================================
@@ -538,5 +537,4 @@ AddEventHandler('onClientResourceStart', function(res)
         TriggerServerEvent('gcPhone:allUpdate')
     end
 end)
-
 
