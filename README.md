@@ -2,6 +2,7 @@
 
 Update :
  * Réindetation du code pour une meilleur lisibilité 
+ * Désactivation des print console pour les erreurs vendor.js
  * Modification du commentaire pour l'ouverture du téléphone
  * Ajout d'auto messages
  * Modification des GetPlayerPed(-1) par PlayerPedId() dans 
