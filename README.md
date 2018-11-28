@@ -14,6 +14,9 @@ Update :
      * Les screens sont enregistrés dans le répértoire `C:\Users\%USERNAME%\Documents\Rockstar Games\GTA V\Profiles\[inside one of folders idk which you'll have to guess]`
      * Possibilités de les ouvrir avec : https://www.gta5-mods.com/tools/gta5view-1-4-0dev4-exe/download/58989
 
+Exemple : 
+![Test Selfie](https://i.imgur.com/z7ZB2Xj.jpg)
+
 --- 
 ### Tutorial :
 /!\ For use this phone (Linux), you must absolutly use mysql-async 2.x !
