@@ -16,6 +16,11 @@ Update :
 
 --- 
 ### Tutorial :
+/!\ For use this phone, you must absolutly use mysql-async 2.x !
+ * https://github.com/brouznouf/fivem-mysql-async/tree/2.0
+ 
+ ---
+ 
 1. Download the gcphone and esx_addons_gcphone
 2. Put the downloaded files on your ftp.
     * server-data/resources/
