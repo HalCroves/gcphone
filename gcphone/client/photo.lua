@@ -20,7 +20,6 @@ AddEventHandler('camera:open', function()
     CreateMobilePhone(1)
     CellCamActivate(true, true)
     phone = true
-    ePhoneOutAnim()
 end)
 
 frontCam = false
