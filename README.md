@@ -8,11 +8,7 @@ Update :
     * client.lua
     * animation.lua
  * Dans photo.lua, modifications des touches pour utiliser la fonction ```local Keys = {```
- 
- ---
- 
-### Reste à faire :
- * Le problème des selfies
+ * Possibilités de prendre des selfies => https://forum.fivem.net/t/release-cellphone-camera/43599
 
 --- 
 ### Tutorial :
