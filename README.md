@@ -9,6 +9,10 @@ Update :
     * animation.lua
  * Dans photo.lua, modifications des touches pour utiliser la fonction ```local Keys = {```
  * Possibilités de prendre des selfies => https://forum.fivem.net/t/release-cellphone-camera/43599
+     * Flèche du haut pour rentrer en mode selfie
+     * Clic gauche pour prendre une photo/selfie
+     * Les screens sont enregistrés dans le répértoire `C:\Users\%USERNAME%\Documents\Rockstar Games\GTA V\Profiles\[inside one of folders idk which you'll have to guess]`
+     * Possibilités de les ouvrir avec : https://www.gta5-mods.com/tools/gta5view-1-4-0dev4-exe/download/58989
 
 --- 
 ### Tutorial :
