@@ -43,7 +43,7 @@ AddEventHandler('esx_phone:registerNumber', function(number, type, sharePos, has
 		sources = {},
 		alerts = {}
 	}
-end)
+end) 
 
 AddEventHandler('esx:setJob', function(source, job, lastJob)
 	if PhoneNumbers[lastJob.name] ~= nil then
