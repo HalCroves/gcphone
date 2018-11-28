@@ -31,7 +31,7 @@ function notifyAlertSMS (number, alert, listSrc)
 			end)
 		end
 	end
-end
+end 
 
 AddEventHandler('esx_phone:registerNumber', function(number, type, sharePos, hasDispatch, hideNumber, hidePosIfAnon)
 	print('==== Enregistrement du telephone ' .. number .. ' => ' .. type)
