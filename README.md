@@ -84,15 +84,11 @@ start esx_truckerjob
 
 5. Change the default zoom (**not tested**)
 
-In `gcphone/html/static/config/config.json`, add this : 
+In `gcphone/html/static/config/config.json`, add this :  `"zoom" : "60%",`
 
-     * `"zoom" : "60%",`
+Or in your `html/static/js/app.js` search  `zoom: window.localStorage.gc_zoom || "100%",` and replace by `zoom: window.localStorage.gc_zoom || "60%",`
 
-Or in your `html/static/js/app.js` search :
-     * `zoom: window.localStorage.gc_zoom || "100%",`
-     
-And replace by :
-     * `zoom: window.localStorage.gc_zoom || "60%",`
+Now, clear your server cache and maybe your FiveM cache.
      
 ---
 
