@@ -67,6 +67,20 @@ start esx_lscustom
 start esx_truckerjob
 ```
 
+4. Configure the voice, in `gcphone/html/static/config/config.json`.
+    * Basic use `"useWebRTCVocal": false,` unless you have a custom RTC server.
+```lua
+	"//": "useWebRTCVocal: false => Appels avec channels de GTA",
+	"//": "useWebRTCVocal: true  => Appels avec WebRTC",
+	"useWebRTCVocal": false,
+	"RTCConfig": {
+		"iceServers": [{
+		"urls": ["turn:gannon.ovh"],
+		"username": "jojo",
+		"credential": "pass"
+		}]
+	},
+```
 ---
 
 For use distress signal (esx_ambulancejob), you need to edit the client.main :
