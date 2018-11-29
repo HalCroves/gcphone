@@ -20,6 +20,8 @@ Exemple :
 
 A faire :
  * Ajouter des `Esx.ShowNotification` pour des messages d'aides (utilisation photo)
+ * Monter un serveur RTC
+ * Voir pour upgrade mysql-async
  
 --- 
 ### Tutorial :
