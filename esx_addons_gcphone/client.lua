@@ -8,7 +8,7 @@ AddEventHandler('esx_addons_gcphone:call', function(data)
 		DisplayOnscreenKeyboard(1, "FMMC_MPM_NA", "", "", "", "", "", 200)
 		while (UpdateOnscreenKeyboard() == 0) do
 			DisableAllControlActions(0);
-			Wait(0);
+			Citizen.Wait(0);
 		end
 		if (GetOnscreenKeyboardResult()) then
 			message = GetOnscreenKeyboardResult()
