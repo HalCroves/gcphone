@@ -86,13 +86,13 @@ start esx_truckerjob
 
 In `gcphone/html/static/config/config.json`, add this : 
 
-     * `"zoom" : "80%",`
+     * `"zoom" : "60%",`
 
-Or in your html/static/js/app.js, search :
-     * `zoom: window.localStorage.gc_zoom || "100%"`
-     
-and replace by :
+Or in your `html/static/js/app.js` search :
      * `zoom: window.localStorage.gc_zoom || "100%",`
+     
+And replace by :
+     * `zoom: window.localStorage.gc_zoom || "60%",`
      
 ---
 
