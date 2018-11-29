@@ -28,7 +28,7 @@ Exemple :
 1. Download the gcphone and esx_addons_gcphone
 2. Put the downloaded files on your ftp.
     * server-data/resources/
-3. In, your server.cfg, put before the jobs addons :
+3. In, your server.cfg, put **before** the jobs addons :
     * start gcphone
     * start esx_addons_gcphone
 
@@ -81,6 +81,19 @@ start esx_truckerjob
 		}]
 	},
 ```
+
+5. Change the default zoom (**not tested**)
+
+In `gcphone/html/static/config/config.json`, add this : 
+
+     * `"zoom" : "80%",`
+
+Or in your html/static/js/app.js, search :
+     * `zoom: window.localStorage.gc_zoom || "100%"`
+     
+and replace by :
+     * `zoom: window.localStorage.gc_zoom || "100%",`
+     
 ---
 
 For use distress signal (esx_ambulancejob), you need to edit the client.main :
