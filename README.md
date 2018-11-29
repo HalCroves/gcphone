@@ -18,6 +18,9 @@ Update :
 Exemple : 
 ![Test Selfie](https://i.imgur.com/z7ZB2Xj.jpg)
 
+A faire :
+ * Ajouter des `Esx.ShowNotification` pour des messages d'aides (utilisation photo)
+ 
 --- 
 ### Tutorial :
 /!\ For use this phone (Linux), you must absolutly use mysql-async 2.x !
