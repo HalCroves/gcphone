@@ -85,6 +85,9 @@ Citizen.CreateThread(function()
 		end
 		
 		if phone == true then
+			ESX.ShowNotification('Appuyez sur ~b~"Fléche du haut" ~s~pour passer en mode ~y~selfie~s~.')
+			ESX.ShowNotification('Appuyez sur ~b~"ESC" ~s~ou ~b~"ESPACE" ~s~pour ~r~quitter ~s~le mode ~y~selfie~s~.')
+			ESX.ShowNotification('Appuyez sur ~b~"Clic gauche" ~s~pour ~g~prendre ~s~un ~y~selfie~s~.')
 			if IsControlJustPressed(1, 176) then
 				ESX.UI.HUD.SetDisplay(0.0)
 				TriggerEvent('es:setMoneyDisplay', 0.0)
