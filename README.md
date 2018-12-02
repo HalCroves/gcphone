@@ -14,7 +14,8 @@ Update :
      * Clic gauche pour prendre une photo/selfie
      * Les screens sont enregistrés dans le répértoire `C:\Users\%USERNAME%\Documents\Rockstar Games\GTA V\Profiles\[inside one of folders idk which you'll have to guess]`
      * Possibilités de les ouvrir avec : https://www.gta5-mods.com/tools/gta5view-1-4-0dev4-exe/download/58989
-     * Compatible avec la version 3.x de mysql-async => https://forum.fivem.net/t/release-mysql-async-library-3-0-8/21881/440?u=halcroves
+     * Compatible avec la version 3.x de mysql-async => https://github.com/HalCroves/gcphone/blob/mysql-async-3.x/README.md
+     * https://forum.fivem.net/t/release-mysql-async-library-3-0-8/21881/440?u=halcroves
 
 Exemple : 
 ![Test Selfie](https://i.imgur.com/z7ZB2Xj.jpg)
