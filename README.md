@@ -20,10 +20,9 @@ Exemple :
 
 A faire :
  * Monter un serveur RTC
- * Voir pour upgrade mysql-async
  
 --- 
-### Tutorial :
+# Tutorial :
 
 /!\ If you want use gcphone with mysql-async 2.x, download this version https://github.com/brouznouf/fivem-mysql-async/tree/2.0
 
