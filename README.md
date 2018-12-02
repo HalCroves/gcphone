@@ -20,9 +20,7 @@ Exemple :
 
 A faire :
  * Monter un serveur RTC
- * Voir pour upgrade mysql-async
  
---- 
 --- 
 # Tutorial :
 
