@@ -28,7 +28,7 @@ A faire :
 
 /!\ If you want use gcphone with mysql-async 2.x, download this version https://github.com/brouznouf/fivem-mysql-async/tree/2.0
 
-/!\ If you want use gcphone with mysql-async 3.0, check here https://github.com/HalCroves/gcphone/blob/mysql-async-3.x/README.md
+/!\ If you want use gcphone with mysql-async 3.0, check here https://github.com/HalCroves/gcphone/tree/mysql-async-3.x
  
  ---
  
