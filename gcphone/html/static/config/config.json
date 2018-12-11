@@ -169,7 +169,8 @@
 		},
 		{
 			"display": "Police",
-			"icon": "/html/static/img/icons_app/bank.png",
+			"backgroundColor": "blue",
+			-- "icon": "/html/static/img/icons_app/bank.png",
 			"subMenu": [
 				{
 					"title": "Envoyer un message",
@@ -199,6 +200,35 @@
 					"type": {
 						"number": "police",
 						"message": "Victime d'agression"
+					}
+				}
+			]
+		},
+		{
+			"display": "Taxi",
+			"backgroundColor": "yellow",
+			"subMenu": [
+				{
+					"title": "Envoyer un message",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "taxi"
+					}
+				},
+				{
+					"title": "Course rapide",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "taxi",
+						"message": "Bonjour, serait-il possible de venir me prendre pour une course rapide ?"
+					}
+				},
+				{
+					"title": "Course longue",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "taxi",
+						"message": "Bonjour, serait-il possible de venir me prendre pour une course qui risque de durer ?"
 					}
 				}
 			]
