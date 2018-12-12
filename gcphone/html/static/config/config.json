@@ -170,7 +170,6 @@
 		{
 			"display": "Police",
 			"backgroundColor": "blue",
-			-- "icon": "/html/static/img/icons_app/bank.png",
 			"subMenu": [
 				{
 					"title": "Envoyer un message",
