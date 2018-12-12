@@ -5,16 +5,15 @@ function TchatGetMessageChannel (channel, cb)
 end
 
 function TchatAddMessage (channel, message)
-	local id = MySQL.Sync.insert("INSERT INTO phone_app_chat (`channel`, `message`) VALUES (@channel, @message)", {
-		['@channel'] = channel,
-		['@message'] = message
-	})
-	
-	local result = MySQL.Sync.fetchAll('SELECT * FROM phone_app_chat WHERE `id` = @id', {
-		['@id'] = id
-	})
-	
-	TriggerClientEvent('gcPhone:tchat_receive', -1, result[1])
+    local Query = "INSERT INTO phone_app_chat (`channel`, `message`) VALUES(@channel, @message)"
+    local Query2 = 'SELECT * from phone_app_chat WHERE `id` = @id'
+    local Parameters = {
+        ['@channel'] = channel,
+        ['@message'] = message
+    }
+
+	local lastInsertId = MySQL.Sync.insert(Query, Parameters)
+	TriggerClientEvent('gcPhone:tchat_receive', -1, MySQL.Sync.fetchAll(Query2, {['id'] = lastInsertId})[1])
 end
 
 RegisterServerEvent('gcPhone:tchat_channel')
