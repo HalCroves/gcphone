@@ -133,9 +133,14 @@ Citizen.CreateThread(function()
 
         while true do
             Citizen.Wait(0)
-            if IsControlJustPressed(1, KeyOpenClose) and GetLastInputMethod( 0 ) then
-                TooglePhone()
-            end
+            -- if IsControlJustPressed(1, KeyOpenClose) and GetLastInputMethod( 0 ) then
+			if IsControlJustPressed(1, KeyOpenClose) and GetLastInputMethod( 2 ) -- keyboards return true, no keybord return false
+				TooglePhone()
+			end
+			
+			if IsControlJustPressed(1, KeyOpenClose) and GetLastInputMethod( 0 ) then
+				TooglePhone()
+			end
             if menuIsOpen == true then
                 for _, value in ipairs(KeyToucheCloseEvent) do
                     if IsControlJustPressed(1, value.code) then
