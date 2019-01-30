@@ -35,6 +35,9 @@ A faire :
 1. Download the gcphone and esx_addons_gcphone
 2. Put the downloaded files on your ftp.
     * server-data/resources/
+    * gcphone => in "server-data/resources/"
+    * esx_addons_gcphone => in "server-data/resources/[ESX]"
+    
 3. In, your server.cfg, put **before** the jobs addons :
     * start gcphone
     * start esx_addons_gcphone
